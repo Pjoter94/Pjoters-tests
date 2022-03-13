@@ -43,6 +43,7 @@ public class ElementsPage extends BasePage {
 
     public void selectTextBox(){
         menu_arrow.click();
+        waitForElementToAppear(text_box_menu);
         text_box_menu.click();
     }
 
