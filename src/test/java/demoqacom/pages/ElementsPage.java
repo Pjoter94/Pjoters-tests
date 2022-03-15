@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class ElementsPage extends BasePage {
 
+    /* Elements menu webelements */
+
     @FindBy(xpath = "(//div[@class='header-right'])[1]")
     private WebElement menu_arrow;
 
@@ -41,11 +43,11 @@ public class ElementsPage extends BasePage {
         super(driver);
     }
 
-    public void selectTextBox(){
+    public TextBoxPage selectTextBox() {
+        waitForElementToAppear(menu_arrow);
         menu_arrow.click();
         waitForElementToAppear(text_box_menu);
         text_box_menu.click();
+        return new TextBoxPage(driver);
     }
-
-
 }
