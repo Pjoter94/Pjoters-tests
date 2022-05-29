@@ -1,7 +1,5 @@
 package demoqacom.pages;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,7 +28,7 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public ElementsPage clickOnElements() {
+    public ElementsPage initElementsPage() {
         elements.click();
         return new ElementsPage(driver);
     }
