@@ -54,6 +54,11 @@ public class TextBoxPage extends BasePage {
         full_name_text.sendKeys(current_address);
     }
 
+    public void insertPermanentAddress(String current_address) {
+        waitForElementToAppear(permanent_address_text);
+        permanent_address_text.sendKeys(current_address);
+    }
+
     public void clickSubmit() {
         submit_button.click();
     }

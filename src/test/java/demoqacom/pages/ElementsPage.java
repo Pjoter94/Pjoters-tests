@@ -44,8 +44,6 @@ public class ElementsPage extends BasePage {
     }
 
     public TextBoxPage selectTextBox() {
-        waitForElementToAppear(menu_arrow);
-        menu_arrow.click();
         waitForElementToAppear(text_box_menu);
         text_box_menu.click();
         return new TextBoxPage(driver);
