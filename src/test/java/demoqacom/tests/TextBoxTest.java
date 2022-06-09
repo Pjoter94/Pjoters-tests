@@ -9,9 +9,9 @@ import org.testng.annotations.Test;
 public class TextBoxTest extends BaseTest{
 
     private String fullName = "John Doe";
-    private String email = "mail@mail.come";
-    private String currentAddress = "John Doe";
-    private String permanentAddress = "";
+    private String email = "mail@mail.com";
+    private String currentAddress = "Balmoral Estates, Ballater AB35 5TB, Great Britain";
+    private String permanentAddress = "Buckingham Palace, London, SW1A 1AA, Great Britain";
 
     @Test
     public void basicTextBoxTest(){

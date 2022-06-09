@@ -46,12 +46,12 @@ public class TextBoxPage extends BasePage {
 
     public void insertEmail(String email) {
         waitForElementToAppear(email_text);
-        full_name_text.sendKeys(email);
+        email_text.sendKeys(email);
     }
 
     public void insertCurrentAddress(String current_address) {
         waitForElementToAppear(current_address_text);
-        full_name_text.sendKeys(current_address);
+        current_address_text.sendKeys(current_address);
     }
 
     public void insertPermanentAddress(String current_address) {
@@ -60,6 +60,7 @@ public class TextBoxPage extends BasePage {
     }
 
     public void clickSubmit() {
+        waitForElementToAppear(submit_button);
         submit_button.click();
     }
 
